@@ -1,38 +1,162 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.container {
+  width: 100%;
   min-height: 100vh;
+  background-image: linear-gradient(
+    93deg,
+    rgba(255, 255, 255, 0.21) 35.02%,
+    rgba(249, 253, 250, 0.2) 36.38%,
+    rgba(223, 244, 230, 0.18) 41.97%,
+    rgba(15, 170, 70, 0) 87.43%
+  );
+  background-size: cover;
+  background-position: centet;
+  padding: 10px 8%;
+}
+
+nav {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  transition: text-decoration 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff5c11;
+}
+
+.btn_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn_register {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  border: 0;
+  outline: 0;
+  border-radius: 6px;
+  background-color: #ff5c11;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* hero containet */
+
+.content {
+  margin-top: 8%;
+  width: 100%;
+  font-family: Alice;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  color: #000;
+}
+
+.content span {
+  color: #f88424;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  font-size: 25px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content_alice {
+  color: #000;
+  font-family: Alice;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: normal;
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.content h1,
+span {
+  columns: #000;
+  font-family: Alice;
+}
+
+.content form {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-top: 5%;
+}
+
+input[type="text"] {
+  border: 1px solid rgb(228, 228, 228);
+  padding: 20px;
+}
+
+.content form input {
+  border: 0;
+  border-radius: 6px;
+  /* border: 5px solid black; */
+  outline: 0;
+  width: 100%;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.btn_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-search {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  border: 0;
+  outline: 0;
+  border-radius: 6px;
+  background-color: #ff5c11;
   color: white;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-image img {
+  height: 500px;
 }
